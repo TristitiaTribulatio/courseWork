@@ -2,10 +2,18 @@ header {
     width: 100%;
     background-color: #ADEEF6;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5% 0;
+    border-bottom: 1px solid black;
+}
+
+.header {
+    width: 80%;
+    display: flex;
     flex-flow: row wrap;
     align-items: center;
     justify-content: space-around;
-    padding: 1% 0;
 }
 
 .logo {
@@ -15,7 +23,7 @@ header {
 }
 
 .logo {
-    width: 15%;
+    width: 10%;
 }
 
 .logo img {
@@ -25,12 +33,12 @@ header {
 .title h1 {
     color: black;
     text-align: center;
-    font-size: 5em;
+    font-size: 3em;
     font-weight: lighter;
 }
 
 ul.links {
-    width: 15%;
+    width: 10%;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
@@ -57,4 +65,28 @@ ul.links li a {
 
 ul.links li a img{
     width: 100%;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ADEEF6;
+    border-bottom: 1px solid black;
+    position: sticky;
+    top: 0;
+}
+
+.nav {
+    width: 50%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav a {
+    font-size: 2em;
+    color: black;
 }

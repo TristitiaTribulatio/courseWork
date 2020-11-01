@@ -6,8 +6,11 @@
     <title>mainPage</title>
     <link rel="stylesheet" href="/resources/css/index.css">
     <link rel="stylesheet" href="/resources/css/header.css">
+    <link rel="stylesheet" href="/resources/css/mainPage.css">
 </head>
 <body>
     <? include "./resources/php/header.php"; ?>
+    <main>
+    </main>
 </body>
 </html>
