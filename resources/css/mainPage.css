@@ -1,3 +1,83 @@
 main {
     height: 100%;
+    background-color: #DAFBFF;
+}
+
+.aboutUs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+    width: 100%;
+}
+
+.aboutUsInfo {
+    width: 40%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutUsInfo h2 {
+    font-size: 2.5em;
+    padding-bottom: 1.5%;
+}
+
+.aboutUsInfo p {
+    font-size: 1.4em;
+    letter-spacing: 1.5px;
+    white-space: pre-line;
+}
+
+.itemsMenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 100%;
+}
+
+.items {
+    width: 50%;
+    height: 60%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.items li {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ADEEF6;
+    border-radius: 50px;
+}
+
+.items li a {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+
+.items li a img {
+    width: 50%;
+}
+
+.gallery {
+    height: 75vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgs {
+    width: 60%;
+    height: 85%;
 }

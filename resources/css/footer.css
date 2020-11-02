@@ -1,0 +1,33 @@
+footer {
+    width: 100%;
+    background-color: #ADEEF6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    width: 75%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1% 0;
+}
+
+.footer li {
+    width: 30%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer li img {
+    width: 7%;
+}
+
+.footer li p {
+    font-size: 1.2em;
+    padding-left: 1%;
+}
