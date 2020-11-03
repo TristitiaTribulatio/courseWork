@@ -33,7 +33,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="newsPage.php">
                         <img src="/resources/imgs/newsIcon.png">
                         <p>NEWS</p>
                     </a>
