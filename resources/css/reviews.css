@@ -1,0 +1,98 @@
+main {
+    height: 100%;
+    background-color: #DAFBFF;
+}
+
+.reviews {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 2% 0;
+}
+
+.reviews h2 {
+    font-size: 3em;
+    text-align: center;
+    padding-bottom: 1%;
+}
+
+.review {
+    width: 40%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding-bottom: 3%;
+}
+
+.review ul {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    padding-bottom: 2%;
+}
+
+.review ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 4%;
+}
+
+.review ul li:first-child {
+    padding-left: 0;
+}
+
+.review ul li span {
+    width: 30px;
+    height: 30px;
+    background-color: #ADEEF6;
+    border-radius: 30px;
+}
+
+.nameUser {
+    font-size: 1.7em;
+}
+
+.textReview {
+    font-size: 1.3em;
+    white-space: pre-line;
+}
+
+.leaveReview {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.leaveReview form {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 2%;
+}
+
+.leaveReview form input, .leaveReview form textarea {
+    width: 100%;
+    font-size: 1.3em;
+}
+
+.leaveReview form textarea {
+    height: 65%;
+    padding: 1%;
+}
+
+.leaveReview form input {
+    padding: 1%;
+}
+
+.leaveReview form input.sendComment {
+    cursor: pointer;
+}

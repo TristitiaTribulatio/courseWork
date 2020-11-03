@@ -26,7 +26,7 @@ main {
 
 .aboutUsInfo p {
     font-size: 1.4em;
-    letter-spacing: 1.5px;
+    letter-spacing: 1.1px;
     white-space: pre-line;
 }
 
@@ -63,6 +63,24 @@ main {
     justify-content: center;
     align-items: center;
     border-radius: 50px;
+    position: relative;
+}
+
+.items li a:hover {
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.items li a p {
+    text-align: center;
+    position: absolute;
+    max-width: 0px;
+    overflow: hidden;
+    color: white;
+    font-size: 2.5em;
+}
+
+.items li a:hover p {
+    min-width: 100%;
 }
 
 .items li a img {

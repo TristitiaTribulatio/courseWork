@@ -26,16 +26,31 @@
         </section>
         <section class="itemsMenu">
             <ul class="items">
-                <li><a href="#"><img src="/resources/imgs/reviewIcon.png"></a></li>
-                <li><a href="#"><img src="/resources/imgs/newsIcon.png"></a></li>
-                <li><a href="#"><img src="/resources/imgs/historyIcon.png"></a></li>
+                <li>
+                    <a href="reviews.php">
+                        <img src="/resources/imgs/reviewIcon.png">
+                        <p>REVIEWS</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="/resources/imgs/newsIcon.png">
+                        <p>NEWS</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="/resources/imgs/historyIcon.png">
+                        <p>HISTORY</p>
+                    </a>
+                </li>
             </ul>
         </section>
         <section class="gallery">
             <ul class="imgs">
             </ul>
         </section>
-        <? include "./resources/php/footer.php";  ?>
+        <? include "./resources/php/footer.php"; ?>
     </main>
 </body>
 </html>
