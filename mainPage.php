@@ -39,7 +39,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="historyPage.php">
                         <img src="/resources/imgs/historyIcon.png">
                         <p>HISTORY</p>
                     </a>
