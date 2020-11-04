@@ -81,13 +81,59 @@ nav {
 
 .nav {
     width: 50%;
+}
+
+.nav ul.navMenu {
+    width: 100%;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
 }
 
-.nav a {
+.nav ul.navMenu li.navItem {
+    width: 30%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.nav ul.navMenu li.navItem.A:hover ul.aboutMenu {
+    min-width: 100%;
+    opacity: 1;
+}
+
+.nav ul.navMenu li.navItem.E:hover ul.education {
+    min-width: 100%;
+    opacity: 1;
+}
+
+.nav ul.navMenu li.navItem a {
     font-size: 2em;
     color: black;
+}
+
+ul.aboutMenu, ul.education {
+    max-width: 0px;
+    overflow: hidden;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 48px;
+    opacity: 0;
+}
+
+ul.aboutMenu li, ul.education li {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #ADEEF6;
+    margin-bottom: 0.5%;
 }

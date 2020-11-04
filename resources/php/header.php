@@ -12,8 +12,24 @@
 </header>
 <nav>
     <section class="nav">
-        <a href="#">about college</a>
-        <a href="#">education</a>
-        <a href="#">contacts</a>
+        <ul class="navMenu">
+            <li class="navItem A">
+                <a href="#">about college</a>
+                <ul class="aboutMenu">
+                    <li><a href="#">about us</a></li>
+                    <li><a href="historyPage.php">history</a></li>
+                    <li><a href="newsPage.php">news</a></li>
+                    <li><a href="reviews.php">reviews</a></li>
+                </ul>
+            </li>
+            <li class="navItem E">
+                <a href="#">education</a>
+                <ul class="education">
+                    <li><a href="#">applicants</a></li>
+                    <li><a href="#">students</a></li>
+                </ul>
+            </li>
+            <li class="navItem C"><a href="#">contacts</a></li>
+        </ul>
     </section>
 </nav>
