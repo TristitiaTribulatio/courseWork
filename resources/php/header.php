@@ -8,6 +8,7 @@
             <li><a href="#"><img src="/resources/imgs/link1.png"></a></li>
             <li><a href="#"><img src="/resources/imgs/link1.png"></a></li>
         </ul>
+        <a href="adminLogin.php" class="adminLog"><img src="/resources/imgs/adminLog.png"></a>
     </section>
 </header>
 <nav>

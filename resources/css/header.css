@@ -6,6 +6,7 @@ header {
     align-items: center;
     padding: .5% 0;
     border-bottom: 1px solid black;
+    position: relative;
 }
 
 .header {
@@ -64,6 +65,19 @@ ul.links li a {
 }
 
 ul.links li a img{
+    width: 100%;
+}
+
+a.adminLog {
+    width: 3%;
+    position: absolute;
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a.adminLog img {
     width: 100%;
 }
 
@@ -144,3 +158,4 @@ ul.aboutMenu li a, ul.education li a {
     justify-content: center;
     align-items: center;
 }
+
