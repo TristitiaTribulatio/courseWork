@@ -1,5 +1,6 @@
 main {
     height: 100%;
+    width: 100%;
     background-color: #DAFBFF;
 }
 
@@ -22,6 +23,10 @@ main {
 .aboutUsInfo h2 {
     font-size: 2.5em;
     padding-bottom: 3%;
+}
+
+.aboutUsInfo h2 a {
+    color: black;
 }
 
 .aboutUsInfo p {

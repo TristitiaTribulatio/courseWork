@@ -137,3 +137,10 @@ ul.aboutMenu li, ul.education li {
     background-color: #ADEEF6;
     margin-bottom: 0.5%;
 }
+
+ul.aboutMenu li a, ul.education li a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -4,7 +4,7 @@ main {
     background-color: #DAFBFF;
 }
 
-.history {
+.aboutUs {
     width: 100%;
     height: 100%;
     display: flex;
@@ -13,7 +13,7 @@ main {
     align-items: center;
 }
 
-.history .part1 {
+div.part1 {
     width: 60%;
     height: 120vh;
     display: flex;
@@ -22,16 +22,17 @@ main {
     align-items: center;
 }
 
-.history .part1 h1 {
+.aboutUs h2 {
     font-size: 4em;
+    text-align: center;
 }
 
-.history .part1 img {
+.aboutUs p {
+    width: 80%;
+    font-size: 1.5em;
+}
+
+.aboutUs img {
     width: 60%;
     border-radius: 20px;
-}
-
-.history .part1 p {
-    font-size: 1.5em;
-    text-align: center;
 }

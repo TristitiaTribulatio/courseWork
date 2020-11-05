@@ -16,7 +16,7 @@
             <li class="navItem A">
                 <a href="#">about college</a>
                 <ul class="aboutMenu">
-                    <li><a href="#">about us</a></li>
+                    <li><a href="aboutUs.php">about us</a></li>
                     <li><a href="historyPage.php">history</a></li>
                     <li><a href="newsPage.php">news</a></li>
                     <li><a href="reviews.php">reviews</a></li>

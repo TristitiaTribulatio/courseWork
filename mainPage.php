@@ -14,7 +14,7 @@
     <main>
         <section class="aboutUs">
             <div class="aboutUsInfo">
-                <h2>ABOUT US</h2>
+                <h2><a href="aboutUs.php">ABOUT US</a></h2>
                 <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat incidunt suscipit dolor, inventore error eligendi deserunt perspiciatis sed ab explicabo minus esse consequatur possimus voluptatibus tempore aliquam culpa impedit eos.
                 Facere aliquid alias, perspiciatis repellat commodi deleniti rem dolorem, rerum ipsa quo accusantium voluptatum eos nulla a sapiente tempore fugiat laboriosam in earum incidunt ad! Perferendis incidunt expedita nesciunt aliquid.
