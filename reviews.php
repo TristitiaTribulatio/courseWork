@@ -34,9 +34,9 @@
             ?>
         </section>
         <section class="leaveReview">
-            <form>
+            <form method="POST" action="/resources/php/addReview.php">
                 <input type="text" class="name" name="nameUser" placeholder="Введите ФИО"></input>
-                <textarea class="comment" name="reviewUser" placeholder="Оставьте свой отзыв о нас"></textarea>
+                <textarea class="comment" name="description" placeholder="Оставьте свой отзыв о нас"></textarea>
                 <input type="submit" name="button" class="sendComment"></input>
             </form>
         </section>
