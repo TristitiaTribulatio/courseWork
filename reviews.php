@@ -1,3 +1,6 @@
+<?
+    require_once "./resources/php/connection.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,30 +17,21 @@
     <main>
         <section class="reviews">
             <h2>REVIEWS</h2>
+            <?
+                $reviews = ($link -> query("SELECT * FROM `reviews` WHERE `status` = 2")) -> fetch_all(MYSQLI_ASSOC);
+                foreach($reviews as $value){
+            ?>
             <div class="review">
                 <ul>
                     <li><span></span></li>
-                    <li><p class="nameUser">LOREM IPSUM</p></li>
-                    <li><p class="dateReview">03.11.2020 09:37</p></li>
+                    <li><p class="nameUser"><?= $value["nameUser"];?></p></li>
+                    <li><p class="dateReview"><?= $value["date"];?></p></li>
                 </ul>
-                <p class="textReview">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos excepturi, hic consequatur id in ea quae officia, nostrum saepe perferendis vero beatae illum doloremque nulla. Eaque dolorem perspiciatis dolor facilis!</p>
+                <p class="textReview"><?= $value["description"];?></p>
             </div>
-            <div class="review">
-                <ul>
-                    <li><span></span></li>
-                    <li><p class="nameUser">LOREM IPSUM</p></li>
-                    <li><p class="dateReview">03.11.2020 09:37</p></li>
-                </ul>
-                <p class="textReview">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos excepturi, hic consequatur id in ea quae officia, nostrum saepe perferendis vero beatae illum doloremque nulla. Eaque dolorem perspiciatis dolor facilis!</p>
-            </div>
-            <div class="review">
-                <ul>
-                    <li><span></span></li>
-                    <li><p class="nameUser">LOREM IPSUM</p></li>
-                    <li><p class="dateReview">03.11.2020 09:37</p></li>
-                </ul>
-                <p class="textReview">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos excepturi, hic consequatur id in ea quae officia, nostrum saepe perferendis vero beatae illum doloremque nulla. Eaque dolorem perspiciatis dolor facilis!</p>
-            </div>
+            <?
+                };
+            ?>
         </section>
         <section class="leaveReview">
             <form>
