@@ -1,8 +1,8 @@
 <?
     session_start();
-    // if(empty($_SESSION["name"])){
-    //     header("Location: adminLogin.php");
-    // }
+    if(empty($_SESSION["name"])){
+        header("Location: adminLogin.php");
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -18,5 +18,6 @@
 <body>
     <? include "./resources/php/header.php"; ?>
     <? include "./resources/php/footer.php"; ?>
+    <script src="/resources/js/adminPage.js"></script>
 </body>
 </html>
