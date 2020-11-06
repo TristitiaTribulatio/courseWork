@@ -1,0 +1,103 @@
+main {
+    width: 100%;
+    height: 100%;
+    background-color: #DAFBFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.controlReviews {
+    width: 40%;
+    height: 100vh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.controlReviews h2 {
+    width: 100%;
+    height: 20%;
+    font-size: 3.5em;
+    text-align: center;
+    margin-top: 5%;
+}
+
+form.review {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+ul.info {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 2%;
+}
+
+ul.info li {
+    padding-left: 4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul.info li span {
+    background-color: #ADEEF6;
+    border-radius: 50px;
+    width: 30px;
+    height: 30px;
+}
+
+ul.info li:first-child {
+    padding-left: 0;
+}
+
+ul.info li p.nameUser {
+    font-size: 1.5em;
+}
+
+ul.info li p.dateReview {
+    font-size: 1.3em;
+}
+
+form.review p.description {
+    width: 100%;
+    font-size: 1.6em;
+}
+
+ul.controlPanel {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5%;
+}
+
+ul.controlPanel li {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul.controlPanel li a {
+    width: 50%;
+    text-align: center;
+    color: black;
+    font-size: 1.8em;
+    background-color: #ADEEF6;
+    border-radius: 10px;
+    transition: all .3s;
+}
+
+ul.controlPanel li a:hover {
+    box-shadow: 0px 0px 5px black;
+}
