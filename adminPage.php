@@ -28,6 +28,5 @@
         </section>
     </main>
     <? include "./resources/php/footer.php"; ?>
-    <script src="/resources/js/adminIcon.js"></script>
 </body>
 </html>

@@ -1,14 +1,6 @@
 <header>
     <section class="header">
-        <a href="
-        <?
-            if(empty($_SESSION["name"])){
-                echo "/mainPage.php";
-            } else {
-                echo "/adminPage.php";
-            }
-        ?>
-        " class="logo"><img src="/resources/imgs/logo.png"></a>
+        <a href="/mainPage.php" class="logo"><img src="/resources/imgs/logo.png"></a>
         <a href="
         <?
             if(empty($_SESSION["name"])){

@@ -1,4 +1,5 @@
 <?
+    session_start();
     require_once "./resources/php/connection.php";
 ?>
 <!DOCTYPE html>
