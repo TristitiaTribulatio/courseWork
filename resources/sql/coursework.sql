@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Ноя 05 2020 г., 14:56
+-- Время создания: Ноя 07 2020 г., 17:08
 -- Версия сервера: 10.3.22-MariaDB
 -- Версия PHP: 7.1.33
 
@@ -34,6 +34,14 @@ CREATE TABLE `admin` (
   `password` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Дамп данных таблицы `admin`
+--
+
+INSERT INTO `admin` (`id`, `login`, `name`, `password`) VALUES
+(1, 'admin', 'Иванов Иван Иванович ', 'admin'),
+(2, 'root', 'Викторов Виктор Викторович', 'root');
+
 -- --------------------------------------------------------
 
 --
@@ -44,8 +52,16 @@ CREATE TABLE `news` (
   `id` int(11) NOT NULL,
   `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `description` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `date` datetime NOT NULL
+  `date` datetime NOT NULL,
+  `nameFile` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Дамп данных таблицы `news`
+--
+
+INSERT INTO `news` (`id`, `name`, `description`, `date`, `nameFile`) VALUES
+(7, '123', '123', '2020-11-07 05:06:56', '16010641054764.jpg');
 
 -- --------------------------------------------------------
 
@@ -126,13 +142,13 @@ ALTER TABLE `status`
 -- AUTO_INCREMENT для таблицы `admin`
 --
 ALTER TABLE `admin`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT для таблицы `news`
 --
 ALTER TABLE `news`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT для таблицы `reviews`

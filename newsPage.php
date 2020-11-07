@@ -1,5 +1,6 @@
 <?
     session_start();
+    require_once "./resources/php/connection.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -18,38 +19,19 @@
         <section class="news">
             <h2><a href="#">NEWS</a></h2>
             <ul>
-                <li>
+                <?
+                    $news = ($link -> query("SELECT * FROM `news`")) -> fetch_all(MYSQLI_ASSOC);
+                    foreach($news as $value){
+                ?>
+                <li style="background-image: url('/resources/imgs/news/<?= $value["nameFile"]; ?>');">
                     <div class="newsInfo">
-                        <h3><a href="#">LOREM IPSUM</a></h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae exercitationem quae, iusto ad, saepe illum harum repudiandae velit excepturi a reprehenderit animi sed maiores? Sit amet quibusdam mollitia odio at.
-                        Dolore molestias autem labore tempore eligendi cum quas, soluta sint atque quam placeat reprehenderit incidunt possimus consectetur amet. Laboriosam dignissimos aut veniam consectetur quos corporis beatae nam at omnis fuga?
-                        </p>
+                        <h3><a href="#"><?= $value["name"];?></a></h3>
+                        <p><?= $value["description"];?></p>
                     </div>
                 </li>
-                <li>
-                    <div class="newsInfo">
-                        <h3><a href="#">LOREM IPSUM</a></h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae exercitationem quae, iusto ad, saepe illum harum repudiandae velit excepturi a reprehenderit animi sed maiores? Sit amet quibusdam mollitia odio at.
-                        Dolore molestias autem labore tempore eligendi cum quas, soluta sint atque quam placeat reprehenderit incidunt possimus consectetur amet. Laboriosam dignissimos aut veniam consectetur quos corporis beatae nam at omnis fuga?
-                        </p>
-                    </div>
-                </li>
-                <li>
-                    <div class="newsInfo">
-                        <h3><a href="#">LOREM IPSUM</a></h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae exercitationem quae, iusto ad, saepe illum harum repudiandae velit excepturi a reprehenderit animi sed maiores? Sit amet quibusdam mollitia odio at.
-                        Dolore molestias autem labore tempore eligendi cum quas, soluta sint atque quam placeat reprehenderit incidunt possimus consectetur amet. Laboriosam dignissimos aut veniam consectetur quos corporis beatae nam at omnis fuga?
-                        </p>
-                    </div>
-                </li>
-                <li>
-                    <div class="newsInfo">
-                        <h3><a href="#">LOREM IPSUM</a></h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae exercitationem quae, iusto ad, saepe illum harum repudiandae velit excepturi a reprehenderit animi sed maiores? Sit amet quibusdam mollitia odio at.
-                        Dolore molestias autem labore tempore eligendi cum quas, soluta sint atque quam placeat reprehenderit incidunt possimus consectetur amet. Laboriosam dignissimos aut veniam consectetur quos corporis beatae nam at omnis fuga?
-                        </p>
-                    </div>
-                </li>
+                <?
+                    };
+                ?>
             </ul>
         </section>
     </main>
