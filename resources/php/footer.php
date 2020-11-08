@@ -14,10 +14,3 @@
         </li>
     </ul> 
 </footer>
-<?
-    if(!empty($_SESSION["name"])){
-?>
-    <script src="/resources/js/adminIcon.js"></script>
-<?   
-    };
-?>

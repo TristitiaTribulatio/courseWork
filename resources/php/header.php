@@ -16,7 +16,11 @@
             <li><a href="#"><img src="/resources/imgs/link1.png"></a></li>
             <li><a href="#"><img src="/resources/imgs/link1.png"></a></li>
         </ul>
-        <a href="adminLogin.php" class="adminLog"><img src="/resources/imgs/adminLog.png"></a>
+        <? if(empty($_SESSION["name"])){ ?>
+                <a href="adminLogin.php" class="adminLog"><img src="/resources/imgs/adminLog.png"></a>
+        <? } else { ?>
+                <a href="/resources/php/logout.php" class="adminLog"><img src="/resources/imgs/logout.png"></a>
+        <? } ?>
     </section>
 </header>
 <nav>
