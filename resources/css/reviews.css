@@ -89,6 +89,11 @@ main {
 .leaveReview form textarea {
     height: 65%;
     padding: 1%;
+    outline: 0;
+    max-width: 100%;
+    min-width: 60%;
+    max-height: 65%;
+    min-height: 50%;
 }
 
 .leaveReview form input {
@@ -97,4 +102,5 @@ main {
 
 .leaveReview form input.sendComment {
     cursor: pointer;
+    border: 1px solid grey;
 }

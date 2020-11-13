@@ -36,12 +36,13 @@
         </section>
         <section class="leaveReview">
             <form method="POST" action="/resources/php/addReview.php">
-                <input type="text" class="name" name="nameUser" placeholder="Введите ФИО"></input>
-                <textarea class="comment" name="description" placeholder="Оставьте свой отзыв о нас"></textarea>
+                <input type="text" class="name" name="nameUser" placeholder="Введите ФИО" required></input>
+                <textarea class="comment" name="description" placeholder="Оставьте свой отзыв о нас" required></textarea>
                 <input type="submit" name="button" class="sendComment"></input>
             </form>
         </section>
     </main>
     <? include "./resources/php/footer.php"; ?>
+    <script src="/resources/js/reviews.js"></script>
 </body>
 </html>
