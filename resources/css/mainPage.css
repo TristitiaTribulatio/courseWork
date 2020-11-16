@@ -13,7 +13,7 @@ main {
 }
 
 .aboutUsInfo {
-    width: 40%;
+    width: 50%;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
@@ -21,8 +21,8 @@ main {
 }
 
 .aboutUsInfo h2 {
-    font-size: 2.5em;
-    padding-bottom: 3%;
+    font-size: 3.5em;
+    padding-bottom: 5%;
 }
 
 .aboutUsInfo h2 a {
@@ -30,7 +30,7 @@ main {
 }
 
 .aboutUsInfo p {
-    font-size: 1.4em;
+    font-size: 1.5em;
     text-align: center;
     letter-spacing: 1.1px;
 }
@@ -92,15 +92,20 @@ main {
     width: 50%;
 }
 
-.gallery {
-    height: 75vh;
+.swiper-container {
+    width: 50%;
+    height: 70vh;
+    margin-bottom: 3%;
+}
+
+.swiper-slide {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.imgs {
-    width: 60%;
-    height: 85%;
+.swiper-slide img {
+    height: 95%;
+    border-radius: 10px;
 }

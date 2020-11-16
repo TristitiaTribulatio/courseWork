@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="/resources/css/header.css">
     <link rel="stylesheet" href="/resources/css/mainPage.css">
     <link rel="stylesheet" href="/resources/css/footer.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 <body>
     <? include "./resources/php/header.php"; ?>
@@ -49,11 +51,35 @@
                 </li>
             </ul>
         </section>
-        <section class="gallery">
-            <ul class="imgs">
+        <section class="swiper-container">
+            <ul class="swiper-wrapper">
+                <li class="swiper-slide"><img src="/resources/imgs/news/16010637388411.jpg"></img></li>
+                <li class="swiper-slide"><img src="/resources/imgs/news/16010637388411.jpg"></img></li>
+                <li class="swiper-slide"><img src="/resources/imgs/news/16010637388411.jpg"></img></li>
             </ul>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <div class="swiper-scrollbar"></div>
         </section>
         <? include "./resources/php/footer.php"; ?>
     </main>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        const slider = new Swiper(".swiper-container", {
+            direction: "horizontal",
+            speed: 700,
+            effect: "slide",
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        });
+    </script>
 </body>
 </html>
