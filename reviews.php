@@ -27,6 +27,9 @@
                     <li><span></span></li>
                     <li><p class="nameUser"><?= $value["nameUser"];?></p></li>
                     <li><p class="dateReview"><?= $value["date"];?></p></li>
+                    <? if($_SESSION["name"]){ ?>
+                        <li class="deleteIcon"><a href="./resources/php/deleteReview.php?id=<?= $value["id"]; ?>"><img src="/resources/imgs/deleteIcon.png"></a></li>
+                    <? }; ?>
                 </ul>
                 <p class="textReview"><?= $value["description"];?></p>
             </div>
