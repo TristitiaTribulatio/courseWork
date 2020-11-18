@@ -27,7 +27,7 @@
     <section class="nav">
         <ul class="navMenu">
             <li class="navItem A">
-                <a href="#">about college</a>
+                <a href="/mainPage.php">about college</a>
                 <ul class="aboutMenu">
                     <li><a href="aboutUs.php">about us</a></li>
                     <li><a href="historyPage.php">history</a></li>
@@ -42,7 +42,7 @@
                     <li><a href="#">students</a></li>
                 </ul>
             </li>
-            <li class="navItem C"><a href="#">contacts</a></li>
+            <li class="navItem C"><a href="contacts.php">contacts</a></li>
         </ul>
     </section>
 </nav>

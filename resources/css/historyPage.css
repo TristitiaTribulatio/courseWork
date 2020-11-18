@@ -14,8 +14,8 @@ main {
 }
 
 .history .part1 {
-    width: 60%;
-    height: 120vh;
+    width: 65%;
+    height: 130vh;
     display: flex;
     flex-flow: column wrap;
     justify-content: space-around;
@@ -32,6 +32,8 @@ main {
 }
 
 .history .part1 p {
+    width: 80%;
     font-size: 1.5em;
     text-align: center;
+    letter-spacing: 1.1px;
 }

@@ -14,8 +14,8 @@ main {
 }
 
 div.part1 {
-    width: 60%;
-    height: 120vh;
+    width: 65%;
+    height: 140vh;
     display: flex;
     flex-flow: column wrap;
     justify-content: space-around;
@@ -30,6 +30,9 @@ div.part1 {
 .aboutUs p {
     width: 80%;
     font-size: 1.5em;
+    padding: 3% 0;
+    letter-spacing: 1.1px;
+    text-align: center;
 }
 
 .aboutUs img {
