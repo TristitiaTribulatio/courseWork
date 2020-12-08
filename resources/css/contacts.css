@@ -15,14 +15,14 @@ main {
 
 div.info {
     width: 50%;
-    height: 50%;
+    height: 30%;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
 }
 
-div.info h2 {
+div.info h2, div.mapInfo h2 {
     font-size: 3.5em;
     padding-bottom: 4%;
 }
@@ -33,6 +33,9 @@ ul.infoMain {
     flex-flow: column wrap;
     justify-content: space-around;
     align-items: center;
+    background-color: #ADEEF6;
+    padding: 1% 3%;
+    border-radius: 10px;
 }
 
 li.per1, li.per2, li.otherInfo {
@@ -76,3 +79,16 @@ li.position {
     font-weight: 600;
 }
 
+div.mapInfo {
+    width: 50%;
+    height: 70%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+iframe.map {
+    width: 100%;
+    height: 70%;
+}

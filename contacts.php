@@ -48,6 +48,10 @@
                     </li>
                 </ul>
             </div>
+            <div class="mapInfo">
+                <h2>КАК ДО НАС ДОБРАТЬСЯ?</h2>
+                <iframe src="https://yandex.ru/map-widget/v1/-/CCUE5Ohd9A" frameborder="1" allowfullscreen="true" class='map'></iframe>
+            </div>
         </section>
     </main>
     <? include "./resources/php/footer.php"; ?>
