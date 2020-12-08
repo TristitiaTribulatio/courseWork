@@ -44,6 +44,7 @@ main {
     border-radius: 20px;
     margin: 1.5%;
     min-height: 30%;
+    position: relative;
 }
 
 .newsInfo {
@@ -70,4 +71,15 @@ main {
     font-size: 1.3em;
     text-align: center;
     color: white;
+}
+
+.news ul li a.delete {
+    position: absolute;
+    right: 3%;
+    top: 10%;
+}
+
+.news ul li a.delete img {
+    height: 20px;
+    width: 20px;
 }

@@ -27,6 +27,9 @@
                     <div class="newsInfo">
                         <h3><a href="#"><?= $value["name"];?></a></h3>
                         <p><?= $value["description"];?></p>
+                        <? if($_SESSION["name"]){ ?>
+                            <a href="./resources/php/deleteNews.php?id=<?= $value["id"]; ?>&img=<?= $value["nameFile"]; ?>" class="delete"><img src="/resources/imgs/deleteIconW.png"></a>
+                        <? }; ?>
                     </div>
                 </li>
                 <?
