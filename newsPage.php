@@ -25,7 +25,7 @@
                 ?>
                 <li style="background-image: url('/resources/imgs/news/<?= $value["nameFile"]; ?>');">
                     <div class="newsInfo">
-                        <h3><a href="#"><?= $value["name"];?></a></h3>
+                        <h3><a href="newsItem.php?id=<?= $value["id"]; ?>"><?= $value["name"];?></a></h3>
                         <p><?= $value["description"];?></p>
                         <? if($_SESSION["name"]){ ?>
                             <a href="./resources/php/deleteNews.php?id=<?= $value["id"]; ?>&img=<?= $value["nameFile"]; ?>" class="delete"><img src="/resources/imgs/deleteIconW.png"></a>
