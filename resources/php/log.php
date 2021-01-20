@@ -8,7 +8,7 @@
         $info = ($link -> query("SELECT * FROM `admin` WHERE `login` = '$login'")) -> fetch_assoc();
         if($info["password"] === $password){
             $_SESSION["name"] = $info["name"];
-            header("Location: ../../adminPage.php");
         }
+        header("Location: ../../adminPage.php");
     }
 ?>

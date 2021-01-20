@@ -1,10 +1,10 @@
 <header>
     <section class="header">
-        <a href="/mainPage.php" class="logo"><img src="/resources/imgs/logo.png"></a>
+        <a href="/index.php" class="logo"><img src="/resources/imgs/logo.png"></a>
         <a href="
         <?
             if(empty($_SESSION["name"])){
-                echo "/mainPage.php";
+                echo "/index.php";
             } else {
                 echo "/adminPage.php";
             }
