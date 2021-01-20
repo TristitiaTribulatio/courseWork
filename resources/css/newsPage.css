@@ -6,7 +6,7 @@ main {
 
 .news {
     width: 100%;
-    height: 110vh;
+    min-height: 110vh;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
@@ -20,14 +20,11 @@ main {
     justify-content: center;
     align-items: center;
     padding-top: 3%;
-}
-
-.news h2 a {
     color: black;
 }
 
 .news ul {
-    height: 90%;
+    min-height: 75vh;
     width: 75%;
     display: flex;
     flex-flow: row wrap;
@@ -36,21 +33,21 @@ main {
 }
 
 .news ul li {
-    width: 40%;
+    min-width: 40%;
     display: flex;
     justify-content: center;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 20px;
     margin: 1.5%;
-    min-height: 30%;
+    min-height: 50vh;
     position: relative;
 }
 
 .newsInfo {
     width: 100%;
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, .5);
@@ -82,4 +79,14 @@ main {
 .news ul li a.delete img {
     height: 20px;
     width: 20px;
+}
+
+@media screen and (max-width: 750px) {
+    .news ul {
+        flex-flow: column nowrap;
+        min-width: 100%;
+    }
+    .news ul li {
+        min-width: 70%;
+    }
 }

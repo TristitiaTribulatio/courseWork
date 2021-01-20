@@ -17,7 +17,7 @@
     <? include "./resources/php/header.php"; ?>
     <main>
         <section class="news">
-            <h2><a href="#">NEWS</a></h2>
+            <h2>NEWS</h2>
             <ul>
                 <?
                     $news = ($link -> query("SELECT * FROM `news`")) -> fetch_all(MYSQLI_ASSOC);

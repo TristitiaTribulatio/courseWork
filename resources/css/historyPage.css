@@ -15,7 +15,7 @@ main {
 
 .history .part1 {
     width: 65%;
-    height: 130vh;
+    min-height: 140vh;
     display: flex;
     flex-flow: column wrap;
     justify-content: space-around;
@@ -36,4 +36,22 @@ main {
     font-size: 1.5em;
     text-align: center;
     letter-spacing: 1.1px;
+}
+
+@media screen and (max-width: 1500px){
+    .history .part1 img {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .history .part1 img {
+        border-radius: 10px;
+    } 
+}
+
+@media screen and (max-width: 750px){
+    .history .part1 img {
+        width: 100%;
+    }
 }

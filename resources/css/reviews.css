@@ -116,3 +116,42 @@ main {
     cursor: pointer;
     border: 1px solid grey;
 }
+
+@media screen and (max-width: 1750px){
+    .leaveReview {
+        height: 50vh;
+    }
+}
+
+@media screen and (max-width: 1250px){
+    .leaveReview {
+        height: 60vh;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .leaveReview {
+        height: 70vh;
+    }
+    .leaveReview form {
+        padding-bottom: 0;
+    }
+    .leaveReview form input {
+        padding: 0;
+    }
+    .leaveReview form input, .leaveReview form textarea {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .leaveReview {
+        height: 80vh;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .leaveReview {
+        height: 100vh;
+    }
+}

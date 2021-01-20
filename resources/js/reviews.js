@@ -31,4 +31,3 @@ formItems.forEach((nameObj) => {
         new setBorder(nameObj, "2px solid red", "0px 0px 5px red");
     })
 })
-

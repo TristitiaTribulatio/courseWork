@@ -159,3 +159,38 @@ ul.aboutMenu li a, ul.education li a {
     align-items: center;
 }
 
+@media screen and (max-width: 1000px) {
+    .logo {
+        width: 15%;
+    }
+    ul.links {
+        width: 15%;
+    }
+    a.adminLog {
+        width: 5%;
+    }
+    header, nav {
+        border-bottom: .5px solid black;
+    }
+    .nav {
+        width: 75%;
+    }
+    .nav ul.navMenu li.navItem a {
+        font-size: 1.5em;
+    }
+    ul.aboutMenu, ul.education {
+        top: 35px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .logo {
+        width: 20%;
+    }
+    .title h1 {
+        font-size: 1.5em;
+    }
+    .nav {
+        width: 100%;
+    }
+}

@@ -8,7 +8,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 75vh;
+    min-height: 75vh;
     width: 100%;
 }
 
@@ -108,4 +108,37 @@ main {
 .swiper-slide img {
     height: 95%;
     border-radius: 10px;
+}
+
+@media screen and (max-width: 1500px){
+    .items li, .items li a {
+        border-radius: 40px;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .items li, .items li a {
+        border-radius: 30px;
+    }
+    .items li a p {
+        font-size: 1.8em;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .items li, .items li a {
+        border-radius: 20px;
+    }
+    .items li a p {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .items li, .items li a {
+        border-radius: 15px;
+    }
+    .items li a p {
+        font-size: 1em;
+    }
 }

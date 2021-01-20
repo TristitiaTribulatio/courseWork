@@ -6,10 +6,10 @@ main {
 
 .addNews {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-flow: column wrap;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
 }
 
@@ -18,12 +18,11 @@ main {
     height: 20%;
     text-align: center;
     font-size: 3.5em;
-    margin-top: 3%;
 }
 
 .addNews form {
     width: 40%;
-    height: 50%;
+    min-height: 25vh;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-around;
@@ -60,11 +59,23 @@ main {
 }
 
 .addNews form input[type="text"] {
-    height: 12%;
+    min-height: 12%;
     border: 1px solid grey;
 }
 
-.addNews form input[type="file"]{
-    width: 50%;
+.addNews form input[type="file"] {
+    min-width: 100%;
     font-size: 1.2em;
+}
+
+@media screen and (max-width: 500px) {
+    .addNews form input[type="text"], .addNews form textarea {
+        font-size: .8em;
+    }
+    .addNews form input[type="submit"] {
+        font-size: 1em;
+    }
+    .addNews form input[type="file"] {
+        font-size: .8em;
+    }
 }
