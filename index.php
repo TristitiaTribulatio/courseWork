@@ -53,9 +53,9 @@
         </section>
         <section class="swiper-container">
             <ul class="swiper-wrapper">
-                <li class="swiper-slide"><img src="/resources/imgs/news/16010637388411.jpg"></img></li>
-                <li class="swiper-slide"><img src="/resources/imgs/news/16010637388411.jpg"></img></li>
-                <li class="swiper-slide"><img src="/resources/imgs/news/16010637388411.jpg"></img></li>
+                <li class="swiper-slide"><img src="/resources/imgs/newsImage.jpg"></img></li>
+                <li class="swiper-slide"><img src="/resources/imgs/newsImage.jpg"></img></li>
+                <li class="swiper-slide"><img src="/resources/imgs/newsImage.jpg"></img></li>
             </ul>
 
             <div class="swiper-button-prev"></div>
