@@ -122,13 +122,6 @@ ul.controlPanel li a:hover {
 
 @media screen and (max-width: 750px){
     ul.controlPanel li a {
-        font-size: 1em;
-        width: 80%;
-    }
-}
-
-@media screen and (max-width: 750px){
-    ul.controlPanel li a {
         font-size: .8em;
         width: 90%;
     }
