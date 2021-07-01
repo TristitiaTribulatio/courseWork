@@ -1,2 +1,2 @@
-# courseWork
+# course_work
 Курсовая работа
